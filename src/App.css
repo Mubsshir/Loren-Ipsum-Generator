@@ -1,0 +1,95 @@
+.App {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 50vw;
+  padding: 20px 25px;
+  margin: 0 auto;
+}
+.App .heading {
+  font-size: 28px;
+  color: rgb(29, 15, 15);
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  margin-bottom: 80px;
+}
+.form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 50px 0;
+}
+.form label {
+  font-size: 24px;
+  font-weight: 500;
+  margin: 0 10px;
+  letter-spacing: 1px;
+}
+.form input {
+  font-size: 20px;
+  width: 55px;
+  height: 40px;
+  border: none;
+  outline: 0;
+  margin: 0 5px;
+  background-color: rgba(167, 58, 167, 0.219);
+  padding: 0 5px;
+  border-radius: 5px;
+}
+
+.form button {
+  height: 40px;
+  font-size: 18px;
+  padding: 0 10px;
+  border-radius: 5px;
+  border: 1px solid rgba(167, 58, 167, 0.219);
+  background-color: rgba(143, 41, 143, 0.582);
+  color: white;
+  font-size: 20px;
+  letter-spacing: 1px;
+  cursor: pointer;
+  transition: all 0.3s ease-in;
+}
+.form button:hover {
+  background-color: white;
+  border-color: rgba(143, 41, 143, 0.582);
+  color: rgba(143, 41, 143, 0.582);
+}
+
+.App .para {
+  color: rgba(90, 10, 90, 0.959);
+  font-weight: 400;
+  font-size: 17px;
+  letter-spacing: 1px;
+}
+.App .copy {
+  display: block;
+  width: 70%;
+  text-align: center;
+  margin: 10px auto;
+  background-color: rgba(54, 196, 54, 0.295);
+  padding: 5px 0;
+  border-radius: 5px;
+  font-weight: 600;
+  color: black;
+  letter-spacing: 1.5px;
+}
+@media screen and (max-width: 991px) {
+  .App {
+    width: 80vw;
+  }
+  .App .heading {
+    margin: 0;
+  }
+}
+
+@media screen and (max-width: 554px) {
+  .App {
+    width: 99vw;
+  }
+  .App .heading {
+    font-size: 24px;
+  }
+}
