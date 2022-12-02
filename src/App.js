@@ -21,10 +21,10 @@ const App = () => {
     }, 3000);
     return () => { clearTimeout(timer) }
   }, [copy])
-  const copyToBoard = (e) => {
+  const copyToBoard = async (e) => {
     setCopy(true)
     let textToCopy = e.target.innerText;
-    navigator.clipboard.writeText(textToCopy);
+    await navigator.clipboard.writeText(textToCopy);
   }
   return (
     <main className="App">
